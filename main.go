@@ -67,7 +67,7 @@ func getTargetCurrency(originalCurrency string) string {
 			fmt.Println("Вы ввели недоступную целевую валюту или несуществующую целевую валюту")
 			fmt.Print("Введите еще раз целевую валюту: ")
 		} else {
-			fmt.Println("Введите исходную валюту. Доступные валюты: RUB, USDT. Ввод производить строго заглавными буквами")
+			fmt.Println("Введите целевую валюту. Доступные валюты: RUB, USDT. Ввод производить строго заглавными буквами")
 			_, _ = fmt.Scan(&targetCurrency)
 			if targetCurrency == "RUB" || targetCurrency == "USDT" {
 				return targetCurrency
